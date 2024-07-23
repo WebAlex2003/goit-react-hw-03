@@ -18,8 +18,8 @@ const ContactForm = ({ onAdd }) => {
     console.log(values);
     onAdd({
       id: Date.now(),
-      name: event.target.elements.name.value,
-      number: event.target.elements.number.value,
+      name: values.name,
+      number: values.number,
     });
     actions.resetForm();
   };
